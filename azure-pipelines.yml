@@ -15,3 +15,4 @@ stages:
   - job: FirstJob
     steps:
     - bash: ls -R $(System.DefaultWorkingDirectory)
+    - bash: pwd
