@@ -14,5 +14,6 @@ stages:
   jobs:
   - job: FirstJob
     steps:
-    - bash: ls -R $(System.DefaultWorkingDirectory)
     - bash: pwd
+    - bash: cd  $(System.DefaultWorkingDirectory)/testing
+    - bash: ls -R 
